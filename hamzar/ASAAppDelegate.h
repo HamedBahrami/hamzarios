@@ -1,0 +1,15 @@
+//
+//  ASAAppDelegate.h
+//  hamzar
+//
+//  Created by Hamed on 2/20/14.
+//  Copyright (c) 2014 Asa. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ASAAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end

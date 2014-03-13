@@ -1,111 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="nRU-Vw-WQB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="VbX-i5-qn2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="AbN-Fc-czh">
+        <scene sceneID="wUU-FV-R5b">
             <objects>
-                <navigationController definesPresentationContext="YES" id="nRU-Vw-WQB" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="VbX-i5-qn2" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oRX-9j-iYU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vp0-fL-SyF">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="cjs-Tm-ppz" kind="relationship" relationship="rootViewController" id="tFi-y7-7i4"/>
+                        <segue destination="d4a-qm-eWn" kind="relationship" relationship="rootViewController" id="5h0-Uh-nzZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kym-bG-UoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3O-1l-lCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1055" y="-5"/>
+            <point key="canvasLocation" x="-1345" y="125"/>
         </scene>
-        <!--View Controller - درباره ما-->
-        <scene sceneID="dno-2d-FQL">
+        <!--About Controller - درباره ما-->
+        <scene sceneID="V6x-r1-eyF">
             <objects>
-                <viewController id="xUA-rl-oe2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GcV-Hg-bJo" userLabel="asda">
+                <viewController id="zgA-ev-z3f" customClass="ASAAboutController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NTu-zg-Y9y" userLabel="asda">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="What about us!?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psx-na-u5V">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="638" translatesAutoresizingMaskIntoConstraints="NO" id="oSc-co-cb0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="638" id="h7q-Sl-gN7"/>
+                                    <constraint firstAttribute="height" constant="437" id="pg7-st-28l"/>
+                                </constraints>
+                                <mutableString key="text">لورم ایپسوم متنی است که ساختگی برای طراحی و چاپ آن مورد است. صنعت چاپ زمانی لازم بود
+        شرایطی شما باید فکر ثبت نام و طراحی، لازمه خروج می باشد. در ضمن قاعده همفکری ها جوابگوی سئوالات زیاد شاید باشد،
+        آنچنان که لازم بود طراحی گرافیکی خوب بود. کتابهای زیادی شرایط سخت ، دشوار و کمی در سالهای دور لازم است. هدف از
+        این نسخه فرهنگ پس از آن و دستاوردهای خوب شاید باشد. حروفچینی لازم در شرایط فعلی لازمه تکنولوژی بود که گذشته، حال
+        و آینده را شامل گردد. سی و پنج درصد از طراحان در قرن پانزدهم میبایست پرینتر در ستون و سطر حروف لازم است، بلکه
+        شناخت این ابزار گاه اساسا بدون هدف بود و سئوالهای زیادی در گذشته بوجود می آید، تنها لازمه آن بود.
+    </mutableString>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="asa_logo_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="l01-DU-Cyb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="V8N-nT-y3J"/>
+                                    <constraint firstAttribute="height" constant="213" id="nyl-K0-Fb6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" label="">
                             <accessibilityTraits key="traits" none="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="Psx-na-u5V" firstAttribute="leading" secondItem="GcV-Hg-bJo" secondAttribute="leading" constant="91" id="c89-lW-z0v"/>
-                            <constraint firstItem="Psx-na-u5V" firstAttribute="top" secondItem="GcV-Hg-bJo" secondAttribute="top" constant="168" id="wK7-y3-GeS"/>
+                            <constraint firstItem="l01-DU-Cyb" firstAttribute="top" secondItem="NTu-zg-Y9y" secondAttribute="top" constant="131" id="1Oi-mx-SHT"/>
+                            <constraint firstItem="oSc-co-cb0" firstAttribute="top" secondItem="l01-DU-Cyb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bBk-Hm-kWG"/>
+                            <constraint firstItem="oSc-co-cb0" firstAttribute="centerX" secondItem="NTu-zg-Y9y" secondAttribute="centerX" type="default" id="eGf-w9-Kji"/>
+                            <constraint firstItem="oSc-co-cb0" firstAttribute="centerX" secondItem="l01-DU-Cyb" secondAttribute="centerX" type="default" id="rQQ-2b-442"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="درباره ما" id="31H-ig-P3M">
-                        <barButtonItem key="backBarButtonItem" title="بازگشت" id="piI-bz-XAS"/>
+                    <navigationItem key="navigationItem" title="درباره ما" id="7m4-nc-jpr">
+                        <barButtonItem key="backBarButtonItem" title="بازگشت" id="5c6-Qt-s3r"/>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pzx-RL-OpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucI-sc-eYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="-5"/>
+            <point key="canvasLocation" x="806" y="125"/>
         </scene>
         <!--View Controller - همزر-->
-        <scene sceneID="YKX-QL-0w8">
+        <scene sceneID="Hlk-L2-etL">
             <objects>
-                <viewController id="cjs-Tm-ppz" customClass="ASAViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m34-uH-WgR">
+                <viewController id="d4a-qm-eWn" customClass="ASAViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c4H-fh-l54">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XXo-ie-D1Q">
+                            <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="3c4-t8-o0e">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
                                 <connections>
-                                    <outlet property="delegate" destination="cjs-Tm-ppz" id="fd0-1O-fFa"/>
+                                    <outlet property="delegate" destination="d4a-qm-eWn" id="LJg-C4-fol"/>
                                 </connections>
                             </webView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="XXo-ie-D1Q" firstAttribute="bottom" secondItem="m34-uH-WgR" secondAttribute="bottom" type="default" id="X6t-OU-y0o"/>
-                            <constraint firstItem="XXo-ie-D1Q" firstAttribute="leading" secondItem="m34-uH-WgR" secondAttribute="leading" type="default" id="aKb-DO-6xB"/>
-                            <constraint firstItem="XXo-ie-D1Q" firstAttribute="trailing" secondItem="m34-uH-WgR" secondAttribute="trailing" type="default" id="xQM-Jj-sNh"/>
-                            <constraint firstItem="XXo-ie-D1Q" firstAttribute="top" secondItem="m34-uH-WgR" secondAttribute="top" type="default" id="zxn-ts-2IB"/>
+                            <constraint firstItem="3c4-t8-o0e" firstAttribute="top" secondItem="c4H-fh-l54" secondAttribute="top" type="default" id="P8q-kq-WAv"/>
+                            <constraint firstItem="3c4-t8-o0e" firstAttribute="leading" secondItem="c4H-fh-l54" secondAttribute="leading" type="default" id="jxZ-3h-S0s"/>
+                            <constraint firstItem="3c4-t8-o0e" firstAttribute="trailing" secondItem="c4H-fh-l54" secondAttribute="trailing" type="default" id="rBq-gz-LTH"/>
+                            <constraint firstItem="3c4-t8-o0e" firstAttribute="bottom" secondItem="c4H-fh-l54" secondAttribute="bottom" type="default" id="wI8-TF-BRf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="همزر" id="fAC-Tn-Scs">
-                        <barButtonItem key="backBarButtonItem" title="برگشت" id="yal-kB-9bf"/>
-                        <barButtonItem key="leftBarButtonItem" title="درباره" id="9bO-eg-PRp">
+                    <navigationItem key="navigationItem" title="همزر" id="Wvz-2E-1Mn">
+                        <barButtonItem key="backBarButtonItem" title="برگشت" id="dT5-wj-ic3"/>
+                        <barButtonItem key="leftBarButtonItem" title="درباره" id="TuA-C9-Aw9">
                             <connections>
-                                <segue destination="xUA-rl-oe2" kind="push" id="JMh-gI-Ubc"/>
+                                <segue destination="zgA-ev-z3f" kind="push" id="LWr-RG-eiU"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="pym-6b-elX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="55w-He-pad">
                             <connections>
-                                <action selector="reloadButtonPushed:" destination="cjs-Tm-ppz" id="6Lo-vf-lty"/>
+                                <action selector="reloadButtonPushed:" destination="d4a-qm-eWn" id="XGK-Bg-xT9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
-                        <outlet property="myWebView" destination="XXo-ie-D1Q" id="MGy-Sn-U4r"/>
+                        <outlet property="myWebView" destination="3c4-t8-o0e" id="YdG-6B-1Hc"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Sd-Kh-pIe" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSu-a3-nHc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-83" y="-5"/>
+            <point key="canvasLocation" x="-181" y="125"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ASAViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ASAViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
+    <resources>
+        <image name="asa_logo_transparent.png" width="201" height="248"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
